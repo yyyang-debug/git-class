@@ -1,0 +1,31 @@
+
+ 2081  ls
+ 2082  rm -rf git
+ 2083  ls
+ 2084  mkdir git
+ 2085  cd git
+ 2086  ls
+ 2087  ssh-keygen -t rsa -C "591867376@qq.com"
+ 2088  cd ~/.ssh
+ 2089  cat id_rsa.pub
+ 2090  ssh -T git@github.com
+ 2091  mkdir github
+ 2092  ls
+ 2093  rm -rf github/
+ 2094  cd - 
+ 2095  mkdir github
+ 2096  cd github/
+ 2097  git init
+ 2098  git clone git@github.com:yyyang-debug/git-class.git
+ 2099  git branch version1
+ 2100  git branch
+ 2101  git branch -m version1
+ 2102  ls
+ 2103  cd git-class/
+ 2104  git branch -m version1
+ 2105  git push origin git-class
+ 2106  git push origin version1
+ 2107  git branch -m version2
+ 2108  git push origin version2
+ 2109  touch mylog.txt
+ 2110  history > mylog.txt
